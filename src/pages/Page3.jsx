@@ -22,12 +22,12 @@ export default function Page3() {
       </div>
 
       {/* Subtext */}
-      <p className="text-gray-700 text-base sm:text-lg max-w-md">
+      <p className="text-gray-500 text-base w-auto sm:text-2xl max-w-md">
         Tailored therapy for clearer speech and confident expression.
       </p>
 
       {/* Buttons */}
-      <div className="flex gap-6 mt-8 flex-wrap justify-center">
+      <div className="flex gap-20 mt-8 flex-wrap justify-center">
         <button className="px-6 py-3 bg-gradient-to-r from-[#e75480] to-[#6d28d9] text-white rounded-full font-semibold shadow-lg hover:scale-105 transition-transform">
           Get Started
         </button>
@@ -37,8 +37,8 @@ export default function Page3() {
       </div>
       {/* Gradient */}
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-0 pointer-events-none">
-  <div className="w-[80vw] h-[40vw] bg-gradient-to-tr from-[#a020f0] to-[#6d0dcd] blur-[120px] opacity-40 rounded-full" />
-</div>
+            <div className="w-[80vw] h-[40vw] bg-gradient-to-tr from-[#a020f0] to-[#6d0dcd] blur-[120px] opacity-40 rounded-full" />
+      </div>
 
 
 
