@@ -1,5 +1,14 @@
 import React from 'react';
 import therapyImg from '/public/hero1.png'; // add your image here
+import { motion } from 'framer-motion';
+import InfiniteLogoScroll from '../components/InfiniteLogoScroll';
+
+
+const brands = [
+  '/brands/signia.png',
+  '/brands/widex.png',
+  '/brands/hearcom.png',
+];
 
 const Page1 = () => {
   return (
@@ -10,7 +19,8 @@ const Page1 = () => {
         <div className="sm:hidden fixed top-0 left-0 w-full h-full  bg-gradient-to-b from-[#ffccff] via-[#e5ccff] to-[#ccccff] pointer-events-none" />
 
         {/* Hero Content */}
-        <div className="relative z-10 flex flex-col items-center justify-center text-center  md:pt-24 px-6 md:px-12">
+        <div className="relative z-10 flex flex-col items-center justify-center text-center md:pt-24 px-6 md:px-12 animate-fadeInUp">
+
 
 
           {/* Illustration for mobile only */}
@@ -52,11 +62,8 @@ const Page1 = () => {
               <span className="text-[#771eae]">By</span>
             </h3>
 
-            <div className="flex flex-wrap items-center justify-center gap-6 mt-4">
-              <img src="/brands/signia.png" alt="Signia" className="h-10 sm:h-12 md:h-14" />
-              <img src="/brands/widex.png" alt="Widex" className="h-10 sm:h-12 md:h-14" />
-              <img src="/brands/hearcom.png" alt="Hear.com" className="h-10 sm:h-12 md:h-14" />
-            </div>
+         <InfiniteLogoScroll/>   
+      
 
             {/* Google Review Card */}
             <div className=" text-white p-4 rounded-2xl shadow-xl mt-6 w-[90%] max-w-sm mx-auto">

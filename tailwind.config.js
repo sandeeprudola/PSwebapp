@@ -1,19 +1,16 @@
 // tailwind.config.js
-module.exports = {
-    content: [
-      "./index.html",
-      "./src/**/*.{js,ts,jsx,tsx}", // This is crucial for React projects
-    ],
+export default {
+    content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
     theme: {
       extend: {
-        animation: {
-          'scroll-up': 'scrollUp 12s linear infinite',
-        },
         keyframes: {
-          scrollUp: {
-            '0%': { transform: 'translateY(0%)' },
-            '100%': { transform: 'translateY(-50%)' },
+          scroll: {
+            '0%': { transform: 'translateX(0%)' },
+            '100%': { transform: 'translateX(-50%)' },
           },
+        },
+        animation: {
+          scroll: 'scroll 20s linear infinite',
         },
       },
     },
